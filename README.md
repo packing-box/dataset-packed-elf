@@ -1,6 +1,6 @@
 # Dataset of packed ELF files
 
-This dataset can be used for training machine learning models tailored to ELF executable packing.
+This dataset was made from a set of 482 not packed cleanware including executable and object files coming from `/usr/bin` from a fresh installation of Ubuntu 20.04. From this folder of not packed binaries, we built the 6 subsets with the packers integrated in the [Packing Box](https://github.com/packing-box/docker-packing-box) with the `dataset make` command, using the `--pack-all` option. We end up with 200 binaries randomly chosen from the not packed folder per packer. This dataset can be used for training machine learning models tailored to ELF executable packing.
 
 
 ## :star: Related Projects
